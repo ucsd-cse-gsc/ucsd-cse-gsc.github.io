@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Graduate Student Council</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Graduate Student Council</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 20 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Coffee Hours - Every Monday</title>
+      <link>http://localhost:1313/posts/coffee-hours/</link>
+      <pubDate>Thu, 20 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/coffee-hours/</guid>
+      <description>&lt;p&gt;Join us every Monday for PhD Coffee Hour!&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;When:&lt;/strong&gt; Mondays at 2:30 PM&lt;br&gt;&#xA;&lt;strong&gt;Where:&lt;/strong&gt; CSE Building&lt;/p&gt;&#xA;&lt;p&gt;Where ideas brew over coffee and pastries. New students especially welcome! ☕&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Social Hours - Fun Fridays in CSE</title>
+      <link>http://localhost:1313/posts/social-hours/</link>
+      <pubDate>Tue, 18 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/social-hours/</guid>
+      <description>&lt;p&gt;End your week on a high note with Fun Fridays in CSE! Join us for games, snacks, and great conversations.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;When:&lt;/strong&gt; Fridays, 4:00 PM - 6:00 PM&lt;br&gt;&#xA;&lt;strong&gt;Where:&lt;/strong&gt; CSE Graduate Lounge&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-we-have&#34;&gt;What We Have&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;🎮 Video games (Switch, board games, card games)&lt;/li&gt;&#xA;&lt;li&gt;🍕 Pizza and snacks&lt;/li&gt;&#xA;&lt;li&gt;🥤 Drinks and refreshments&lt;/li&gt;&#xA;&lt;li&gt;🎲 Board game library&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Everyone is welcome - bring a friend or come solo!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Fall Quarter Townhall - November 2025</title>
+      <link>http://localhost:1313/posts/townhall/</link>
+      <pubDate>Sat, 15 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/townhall/</guid>
+      <description>&lt;p&gt;Join us for our quarterly townhall meeting where we discuss important department matters and gather your feedback!&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Date:&lt;/strong&gt; Friday, November 22, 2025&lt;br&gt;&#xA;&lt;strong&gt;Time:&lt;/strong&gt; 3:00 PM - 4:30 PM&lt;br&gt;&#xA;&lt;strong&gt;Location:&lt;/strong&gt; CSE 4140 (Zoom link provided)&lt;/p&gt;&#xA;&lt;h2 id=&#34;why-attend&#34;&gt;Why Attend?&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Voice concerns directly to department leadership&lt;/li&gt;&#xA;&lt;li&gt;Stay informed about department decisions&lt;/li&gt;&#xA;&lt;li&gt;Shape GSC programs and initiatives&lt;/li&gt;&#xA;&lt;li&gt;Make your voice heard&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Your participation matters! See you there.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>GSC Constitution</title>
+      <link>http://localhost:1313/constitution/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/constitution/</guid>
+      <description>&lt;h1 id=&#34;graduate-student-council-constitution&#34;&gt;Graduate Student Council Constitution&lt;/h1&gt;&#xA;&lt;p&gt;The Graduate Student Council (GSC) serves as the official representative body for all CSE graduate students. Our mission is to foster community, facilitate communication between students and faculty, organize events, and advocate for policies that benefit graduate student welfare. All enrolled CSE graduate students are automatic members with full voting rights and eligibility to run for office.&lt;/p&gt;&#xA;&lt;p&gt;The GSC is governed by an Executive Board consisting of a President, Vice President, Treasurer, and Secretary, elected annually in Spring Quarter. These officers coordinate all council activities, manage finances, maintain records, and serve as liaisons with department leadership. Regular meetings are held quarterly, with decisions requiring a quorum of the Executive Board.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

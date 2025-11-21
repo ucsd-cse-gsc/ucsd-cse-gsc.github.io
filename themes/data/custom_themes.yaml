@@ -1,0 +1,36 @@
+# GSC Custom Color Theme
+# Place this file at: /data/custom_themes.yaml
+
+- name: "gsc-colors"
+  accent-color: "#FF9A99"
+  select-color: "#E2FFC8"
+  link-color: "#1A1A1A"
+  bg-color: "#F2E5FF"
+  text-color: "#1A1A1A"
+  bg2-color: "#FFFFFF"
+  border-color: "#1A1A1A"
+  post-shadow-color: "#1A1A1A40"
+  special-text-color: "#FF9A99"
+  post-header-color: "#FFFFFF"
+  post-outline-color: "#4A90E2"
+  post-outline-color2: "#E2FFC8"
+
+
+- name: "light-purple"
+  site-bg: "/black-flowertile.png"
+  accent-color: "#9b59b6"
+  select-color: "#d7a8e4"
+  link-color: "#8e44ad"
+  bg-color: "#f4e1f3"
+  text-color: "#5a5a5a"
+  bg2-color: "#fff"
+  border-color: "#d9b0d1"
+  post-shadow-color: "#d7a8e480"
+  special-text-color: "#8e44ad"
+  post-header-color: "white"
+  post-outline-color: "#d7a8e4"
+  post-outline-color2: "#f4e1f3"
+  list-style:
+    image: "/flower.png"
+    # type: "+ "
+

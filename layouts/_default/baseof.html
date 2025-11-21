@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language }}">
+<head>
+    <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
+    <link rel="canonical" href="{{ .Site.BaseURL }}">
+    
+    {{ with .Site.Params.favicon }}
+    <link rel="icon" href="{{ . }}">
+    {{ end }}
+    
+    <meta name="description" content="{{ with .Params.description }}{{ . }}{{ else }}{{ .Summary }}{{ end }}">
+    
+    {{ if isset .Params "tags" }}
+    <meta name="keywords" content="{{ with .Params.tags }}{{ delimit . ", " }}{{ end }}">
+    {{ end }}
+    
+    {{ partial "style.html" . }}
+    <style>
+    /* Custom GSC styles to fix logo */
+    .flower {
+        width: 400px !important;  /* Adjust to the preferred size */
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+        display: block;
+        margin: 0 auto;  /* This centers it */
+    }
+
+    /* Also center the avatar container */
+    #avatar {
+        text-align: center;
+        margin: 1em auto !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #bio {
+    color: #4A90E2 !important;  /* Same blue color as Welcome*/
+    width: 90% !important;          /* Make it wider - 90% of sidebar */
+    max-width: 350px !important;    /* Maximum width */
+    margin: 1.2em auto !important;  /* Center it with auto margins */
+         }
+
+    #bio h2 {
+    color: #4A90E2 !important;
+            }
+
+    /* Make content sections bigger */
+    main {
+        flex-grow: 0.8;
+        max-width: 100%;
+    }
+
+    article {
+        font-size: 16px !important;  /* Bigger text */
+        padding: 2em !important;      /* More padding */
+        line-height: 1.8;             /* More line spacing */
+    }
+
+    article h1 {
+        font-size: 2.0em !important;  /* Bigger headings */
+        margin-bottom: 1em;
+    }
+
+    article h2 {
+        font-size: 1.5em !important;
+        margin-top: 1.5em;
+        margin-bottom: 0.75em;
+    }
+
+    article h3 {
+        font-size: 1.25em !important;
+        margin-top: 1.2em;
+    }
+
+    article p {
+        margin: 1em 0;
+        font-size: 1.1em;
+    }
+
+    #content {
+        max-width: 1200px !important;  /* Wider overall layout */
+    }
+
+    /* Make sidebar bigger */
+    #sidebar {
+        min-width: 400px !important;  /* Wider sidebar */
+        font-size: 16px !important;   /* Bigger text */
+        padding: 1.5em;
+    }
+
+    #bio {
+        font-size: 1.2em !important;
+        padding: 1em;
+        margin: 1.5em;
+    }
+
+    #bio h2 {
+        font-size: 1.8em !important;
+    }
+
+    /* Fix sidebar links - remove the override that made them too big */
+    #sidebar nav.links li a {
+        font-size: 1.2em !important;         /* Back to normal size */
+        padding: 0.5em 2em !important;     /* Less vertical padding */
+        display: inline-block;
+        width: auto;
+        margin: 0.3em 0;
+    }
+
+    #sidebar nav.links ul {
+        line-height: 2.5rem !important;    /* Adjust line height */
+    }
+
+    /* Make header bigger */
+    header {
+        min-height: 140px !important;  /* Taller header */
+        padding: 1em 0;
+    }
+
+    header > h1 {
+        font-size: 2.8em !important;   /* Bigger title */
+        padding: 0.5em 1.5em !important;
+        max-width: 1200px !important;
+    }
+
+    /* Falling leaves animation */
+    .leaf {
+        position: fixed;
+        top: -20px;
+        z-index: -1;
+        pointer-events: none;
+        font-size: 20px;
+        animation: fall linear infinite;
+    }
+
+    @keyframes fall {
+        to {
+            transform: translateY(100vh) rotate(360deg);
+        }
+    }
+
+    @keyframes sway {
+        0%, 100% {
+            transform: translateX(0);
+        }
+        50% {
+            transform: translateX(30px);
+        }
+    }
+
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta charset="utf-8">
+
+    <script>
+    // Create falling leaves
+    function createLeaf() {
+        const leaf = document.createElement('div');
+        leaf.className = 'leaf';
+        
+        // Randomly pick between different leaf emojis
+        const leafTypes = ['🍂', '🍁'];
+        leaf.innerHTML = leafTypes[Math.floor(Math.random() * leafTypes.length)];
+        
+        // Random horizontal position
+        leaf.style.left = Math.random() * 100 + '%';
+
+        // Start from random height above viewport to create continuous effect
+        leaf.style.top = (Math.random() * -200 - 50) + 'px'; // Start -50 to -250px above screen
+        
+        // Faster animation duration (fall speed)
+        const duration = Math.random() * 1 + 2; // 8-13 seconds (faster)
+        leaf.style.animationDuration = duration + 's';
+
+        // No animation delay - start falling immediately
+        leaf.style.animationDelay = '0s';
+        
+        // // Random delay
+        // leaf.style.animationDelay = Math.random() * 3 + 's';
+        
+        // Bigger size
+        const size = Math.random() * 20 + 50; // 30-50px (bigger)
+        leaf.style.fontSize = size + 'px';
+        
+        // Random rotation
+        leaf.style.transform = 'rotate(' + Math.random() * 360 + 'deg)';
+        
+        document.body.appendChild(leaf);
+        
+        // Remove leaf after animation completes
+        setTimeout(() => {
+            leaf.remove();
+        }, (duration + 1) * 1000);
+    }
+
+    // Create leaves periodically
+    window.addEventListener('load', () => {
+    // Create initial leaves at various positions down the screen
+    for (let i = 0; i < 200; i++) {
+        setTimeout(() => {
+            const leaf = document.createElement('div');
+            leaf.className = 'leaf';
+            const leafTypes = ['🍂', '🍁'];
+            leaf.innerHTML = leafTypes[Math.floor(Math.random() * leafTypes.length)];
+            leaf.style.left = Math.random() * 100 + '%';
+            // Distribute leaves across the entire viewport height
+            leaf.style.top = Math.random() * window.innerHeight + 'px';
+            const duration = Math.random() * 1 + 2;
+            leaf.style.animationDuration = duration + 's';
+            leaf.style.animationDelay = '0s';
+            const size = Math.random() * 20 + 50;
+            leaf.style.fontSize = size + 'px';
+            leaf.style.transform = 'rotate(' + Math.random() * 360 + 'deg)';
+            document.body.appendChild(leaf);
+            setTimeout(() => leaf.remove(), (duration + 1) * 1000);
+        }, i * 300);
+    }
+    
+    // Continuously create new leaves
+    setInterval(() => createLeaf(), 300); // New leaf every 0.3 seconds
+});
+    </script>
+
+</head>
+<body>
+        <header><h1 id="{{ .Site.Title }}"><a href="{{ absLangURL "/" }}">{{ .Site.Title }}</a></h1></header>
+<main>
+    {{ block "main" . }}{{ end }}
+    {{ if .Param "nextprev" }}{{ partial "nextprev.html" . }}{{ end }}
+</main>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>weekly on Graduate Student Council</title>
+    <link>http://localhost:1313/tags/weekly/</link>
+    <description>Recent content in weekly on Graduate Student Council</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 20 Nov 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/weekly/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Coffee Hours - Every Monday</title>
+      <link>http://localhost:1313/posts/coffee-hours/</link>
+      <pubDate>Thu, 20 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/coffee-hours/</guid>
+      <description>&lt;p&gt;Join us every Monday for PhD Coffee Hour!&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;When:&lt;/strong&gt; Mondays at 2:30 PM&lt;br&gt;&#xA;&lt;strong&gt;Where:&lt;/strong&gt; CSE Building&lt;/p&gt;&#xA;&lt;p&gt;Where ideas brew over coffee and pastries. New students especially welcome! ☕&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Social Hours - Fun Fridays in CSE</title>
+      <link>http://localhost:1313/posts/social-hours/</link>
+      <pubDate>Tue, 18 Nov 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/social-hours/</guid>
+      <description>&lt;p&gt;End your week on a high note with Fun Fridays in CSE! Join us for games, snacks, and great conversations.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;When:&lt;/strong&gt; Fridays, 4:00 PM - 6:00 PM&lt;br&gt;&#xA;&lt;strong&gt;Where:&lt;/strong&gt; CSE Graduate Lounge&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-we-have&#34;&gt;What We Have&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;🎮 Video games (Switch, board games, card games)&lt;/li&gt;&#xA;&lt;li&gt;🍕 Pizza and snacks&lt;/li&gt;&#xA;&lt;li&gt;🥤 Drinks and refreshments&lt;/li&gt;&#xA;&lt;li&gt;🎲 Board game library&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Everyone is welcome - bring a friend or come solo!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
