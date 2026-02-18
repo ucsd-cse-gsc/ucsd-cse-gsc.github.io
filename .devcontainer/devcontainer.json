@@ -1,0 +1,23 @@
+{
+  "name": "UCSD CSE-GSC Site",
+  "image": "mcr.microsoft.com/devcontainers/base:debian",
+  "features": {
+    "ghcr.io/devcontainers/features/hugo:1": {
+      "version": "latest",
+      "extended": true
+    }
+  },
+  "forwardPorts": [1313],
+  "portsAttributes": {
+    "1313": { "label": "Hugo Dev Server", "onAutoForward": "openBrowser" }
+  },
+  "postCreateCommand": "hugo version",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "budparr.language-hugo-vscode",
+        "yzhang.markdown-all-in-one"
+      ]
+    }
+  }
+}
